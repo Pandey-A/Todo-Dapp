@@ -1,0 +1,39 @@
+{
+  "name": "todo-dapp",
+  "version": "1.0.0",
+  "description": "Decentralized ToDo Application for Hardhat and Shardeum",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "test:gas": "REPORT_GAS=true npx hardhat test",
+    "node": "npx hardhat node",
+    "deploy:local": "npx hardhat run scripts/deploy.js --network localhost",
+    "deploy:shardeum": "npx hardhat run scripts/deploy.js --network shardeum_testnet",
+    "deploy:sepolia": "npx hardhat run scripts/deploy.js --network sepolia",
+    "interact:local": "npx hardhat run scripts/interact.js --network localhost",
+    "interact:shardeum": "npx hardhat run scripts/interact.js --network shardeum_testnet",
+    "clean": "npx hardhat clean",
+    "frontend:install": "cd frontend && npm install",
+    "frontend:start": "cd frontend && npm start",
+    "frontend:build": "cd frontend && npm run build"
+  },
+  "keywords": [
+    "blockchain",
+    "ethereum",
+    "shardeum",
+    "dapp",
+    "todo",
+    "hardhat",
+    "solidity",
+    "web3"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "*",
+    "docx": "^9.5.1",
+    "dotenv": "*",
+    "hardhat": "*"
+  }
+}
